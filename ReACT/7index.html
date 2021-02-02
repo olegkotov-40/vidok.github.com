@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="video-layer">
+
+
+        <div class="sidenav">
+            <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
+            <li class="menu_item"><a href="3.html" class="menu_link">стр№1</a></li>
+            <li class="menu_item"><a href="2.html" class="menu_link">стр2</a></li>
+            <li class="menu_item"><a href="1.html" class="menu_link">сек№3</a></li>
+            <li class="menu_item"><a href="4.html" class="menu_link">стр№4</a></li>
+            <li class="menu_item"><a href="5.html" class="menu_link">стр№5</a></li>
+            <li class="menu_item"><a href="6.html" class="menu_link">стр№6</a></li>
+            
+            <li class="menu_item"><a href="3.html" class="menu_link">стр№7</a></li>
+            <li class="menu_item"><a href="2.html" class="menu_link">стр8</a></li>
+            <li class="menu_item"><a href="1.html" class="menu_link">сек№9</a></li>
+            <li class="menu_item"><a href="4.html" class="menu_link">стр№10</a></li>
+            <li class="menu_item"><a href="5.html" class="menu_link">стр№11</a></li>
+            <li class="menu_item"><a href="6.html" class="menu_link">стр№12</a></li>
+           
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+        
+        
+
+        
+        
+          
+
+
+        <div class="content">
+            <h1 class="ogo">Наша веселая семья</h1>
+            <p class="ogr">Никогда не унываем не грустим</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+
+
+
+
+
+            
+
+
+
+
+            <video src="img/20210201_191514.mp4" loop autoplay id="myVideo">
+
+            </video>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        // Get the video
+        var video = document.getElementById("myVideo");
+
+        // Get the button
+        var btn = document.getElementById("myBtn");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+    <!--<script src="js/script.js"></script>-->
+</body>
+
+</html>
